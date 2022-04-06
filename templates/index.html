@@ -16,7 +16,7 @@
                 <div class="card">
                     <h2>{{ article['title'] }}</h2>
                     <p class="text">{{ article['subtitle'] }} </p>
-                    <a href="#">Read</a>
+                    <a href="{{ url_for('article_page', article_id=article['id']) }}">Read</a>
                 </div>
         </div>
     {% endfor %}
